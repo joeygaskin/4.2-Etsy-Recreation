@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Etsy Recreation Page</title>
+  <link rel="stylesheet" type="text/css" href="scss/main.scss">
+</head>
+<body>
+  <div class="outer-container">
+  <div class="navigation"></div>
+  <div class="page">
+  <div class="left_container">
+    <ul class="sidebar">All Categories
+      <li class="sidebar-list">Art & Collectibles</li>
+      <li class="sidebar-list">Clothing</li>
+      <li class="sidebar-list">Home & Living</li>
+      <li class="sidebar-list">Accessories</li>
+      <li class="sidebar-list">Jewelry</li>
+      <li class="sidebar-list">Paper & Party Supplies</li>
+      <li class="sidebar-list">Craft Supplies & Tools</li>
+      <li class="sidebar-list">Toys & Games</li>
+      <li class="sidebar-list">Bag & Purses</li>
+      <li class="sidebar-list">Bath & Beauty</li>
+      <li class="sidebar-list">Electronics & Accessories</li>
+      <li class="sidebar-list">Books, Movies & Music</li>
+      <li class="sidebar-list">Weddings</li>
+      <li class="sidebar-list">Shoes</li>
+      <li class="sidebar-list">Pet Supplies</li>
+    </ul>
+  </div>
+  <div class="right_container">
+    <ul class="items"></ul>
+  </div>
+  </div>
+
+    <script id="item-template" type="text/x-handlebars-template">
+        <li class="item">
+          <img src="{{Images.[0].url_170x135}}" alt="">
+
+          <h1>{{title}}</h1>
+                    <h2>{{Shop.shop_name}}</h2><h3>${{price}} {{currency_code}}</h3>
+        </li>
+      </script>
+<script src="bower_components/handlebars/handlebars.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
